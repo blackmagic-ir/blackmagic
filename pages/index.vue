@@ -1,6 +1,7 @@
 <template>
     <div>
-        <h1 style="color: #fff;">hello world</h1>
+        <h1 class="font">The Intuitive
+        </h1>
     </div>
 </template>
 
