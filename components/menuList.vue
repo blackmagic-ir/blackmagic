@@ -11,7 +11,7 @@
           :class="{ active: currentTab === item.id }"
           v-for="item in menu"
           :key="item.id"
-          @click="clickTab(item.id, item.name)"
+          @click="clickTab(item.id, item)"
         >
           {{ item.name }}
         </button>
@@ -42,15 +42,15 @@ fetch("/jsons/menus.json")
   .then((res) => res.json())
   .then((res) => {
     menu.value = res.menuList;
-    tabDetail.value = menu.value[0]?.name;
+    tabDetail.value = menu.value[0];
     currentTab.value = menu.value[0]?.id;
   });
-function clickTab(id: number, name: string) {
+function clickTab(id: number, name: object) {
   currentTab.value = id;
   tabDetail.value = name;
 }
 </script>
 
 <style lang="scss" scoped>
-@import url("../assets/styles/navbar.scss");
+@import url("../assets/navbar.scss");
 </style>

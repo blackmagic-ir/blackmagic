@@ -1,14 +1,12 @@
 <template>
-    <div>
-        <h1 class="font">The Intuitive
-        </h1>
+  <div style="z-index: 0;">
+    <div style="background-color: red;">
+      <h1 class="font">The Intuitive</h1>
     </div>
+  </div>
 </template>
 
-<script setup lang="ts">
-
+<script setup>
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

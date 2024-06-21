@@ -1,8 +1,10 @@
-
-body{
+html,
+body {
     background-color: $dark;
-    color: $white;
     margin: 0 !important;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
 }
 .font{
     font-family: Inter, "Inter Fallback: Arial", ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
